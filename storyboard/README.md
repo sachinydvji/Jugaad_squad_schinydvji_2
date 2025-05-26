@@ -3,38 +3,109 @@
 
 
 ## Storyboard
+Experiment 1: Full Interactive Simulink Experiments (e.g., linearity/non-linearity test)
 
-Delete this line before submission : The core principle of storyboarding is to make the lab/experiment documentation elaborated in a manner that it makes easy for any person (developer/domain and non domain faculty/student) to understand and develop the lab/experiment.
-
-Experiment 1: Name of the Experiment
 
 ### 1. Story Outline
 
-Describe outline here ( Guide : The proposer should first draft the story outline for the proposed outline. This could be 2 or 3 paragraphs.)
+1. Story Outline
+This experiment is designed to provide learners with an interactive platform where they can simulate amplifier circuits using Simulink. The core learning goal is to help students visualize and understand the behavior of amplifiers under different conditions—linear and non-linear—by altering parameters like gain, input amplitude, and component values.
+
+The simulation provides a real-time response of the circuit, helping students detect phenomena such as signal clipping, saturation, and gain deviations. The interface is intuitive and enables both novice and experienced users to engage with the system by designing, simulating, and analyzing amplifier circuits through a structured pathway of experimentation.
 
 ### 2. Story
+In this experiment, the learner enters a virtual lab built on Simulink’s visual interface. They are introduced to amplifier circuits and begin by selecting one of the common configurations (e.g., common-emitter, op-amp non-inverting amplifier). A visual schematic is presented, and the user is allowed to configure values such as resistances, input signal amplitude, and frequency.
 
-Describe the Story introduction here (Guide : The next step is to write a story. Story should be a brief logical description in simple English. It should talk about the overall execution of the experiment in a simplified manner. (should not include any equations/ drawings). The story should include the following points) )
+After defining the parameters, the learner runs a simulation that displays the input and output waveforms. By modifying the input signal and observing output responses, the learner explores linear and non-linear regions of operation. The system gives real-time feedback, including plots, performance metrics, and hints in case of incorrect setup.
+
+Over the course of the experiment, the learner is challenged with tasks like matching a given frequency response, determining gain cutoff, and identifying when and why signal clipping occurs.
+
+
 
 #### 2.1 Set the Visual Stage Description:
-Describe here : (Guide : When a user lands up into a simulator, the visual stage is the first thing that user comes across. The visual stage should include all the elements to be seen by a user on an imaginary canvas.  (This should NOT include any drawings. ) )
+When users enter the simulator, they see:
+
+1.A circuit-building interface with drag-and-drop components (resistors, capacitors, op-amps, signal generators).
+
+2.A live waveform viewer (time and frequency domain).
+
+3.A side panel to input or change values like resistance, input voltage, or frequency.
+
+4.Simulation controls: Run, Pause, Reset.
+
+5.Hint/help system toggle and progress tracker.
+
+
 
 #### 2.2 Set User Objectives & Goals:
-Describe the objectives and goals in details here : (Guide : The user should clearly understand the aims and objective of the experiment. ( how he will begin experiment. in descriptive))
+The user will:
+
+Build a simple amplifier circuit using Simulink blocks.
+
+Configure component values and input signals.
+
+Observe the linear and non-linear behavior through simulation.
+
+Analyze waveform output to derive gain, bandwidth, and signal integrity.
+
+Complete tasks such as determining clipping points and calculating linear range.
+
+
 
 #### 2.3 Set the Pathway Activities:
+Select the amplifier topology from a menu.
 
-Describe the pathway activites here : (Guide : Set the pathway activities in line with the learning objectives (LOs)  & with a view to achieve the goals set in introductory & pedagogy documnets.  (once he begins, how he will traverse through the entire experiment ? in descriptive))
+Configure the schematic using component blocks and parameters.
+
+Define the input signal (sine wave) parameters.
+
+Run the simulation and observe time-domain waveforms.
+
+Adjust input values and re-run to detect clipping and saturation.
+
+Answer simulation-based questions such as gain calculation and signal distortion points.
+
+Complete quiz challenges tied to simulation results.
+
+
+
 
 ##### 2.4 Set Challenges and Questions/Complexity/Variations in Questions:
+Challenge 1: Detect the threshold where amplifier shifts from linear to non-linear behavior.
 
-Describe the challenges Here : (Guide : Set Challenges and Questions/Complexity/variations in questions according to User’s level, so as to invoke the learners’ interest.  (while traversing, what challenges he will face? how he has to solve and overcome ? descriptive).)
+Challenge 2: Calculate gain using simulation data.
+
+Challenge 3: Compare multiple circuits for signal fidelity.
+
+Challenge 4: Achieve a target frequency response by adjusting circuit parameters.
+
+Variations in question difficulty depending on prior performance (adaptive questions).
+
+
 
 ##### 2.5 Allow pitfalls:
-Describe the pitfalls here: (Guide : while traversing or while solving challenge, how will we bring a situation in front of him that he commits mistake if he is not attentive , or not following procedure , descriptive)
+Users who ignore setting correct resistor values may experience distorted outputs.
 
-##### 2.6 Conclusion:
-Describe conclusion here : (Guide: This may include displaying: how much time did the user take to solve the questions/ How many questions were right?/ How many hints did the learner use. Based on this the evaluation/marking to be suggested to the user. (once he is towards the completion of the experiment, what LO he is taking along with him, what will be his probable, interpretation/conclusion , descriptive) )
+Incorrect feedback configuration may lead to unstable or zero gain.
+
+If a user inputs a signal with too high amplitude, they will experience clipping and must understand why.
+
+A help/hint system is in place but penalizes score/marks if overused.
+
+
+
+## 2.6 Conclusion:
+
+At the end of the experiment:
+
+The system summarizes performance: time taken, correct responses, hints used.
+
+Feedback includes: gain accuracy, correct circuit implementation, and output waveform match.
+
+Users reflect on their understanding of linear vs. non-linear operation and practical amplifier behavior.
+
+A downloadable report is generated with user performance and learning outcomes.
+
 
 ##### 2.7 Equations/formulas: NA
 Type equations here : (Guide : ( a separate sheet having equations / programs for the lab exper3ment to be shared along with the Story submissions (1) . You can mark it as numerical reference numbers within the story narration (like we cite in the research papers) and then separately share these equations/programs sheets as a reference, do not include the equations as a whole in the narration))
