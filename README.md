@@ -1,1 +1,1 @@
-# Jugaad_squad_schinydvji_2
+# Jugaad_squad_sachinydvji
