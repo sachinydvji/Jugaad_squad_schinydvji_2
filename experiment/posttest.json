@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What happens to the output of an amplifier when it reaches saturation?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It continues to increase linearly",
+        "b": "It becomes zero",
+        "c": "It flattens or clips",
+        "d": "It oscillates randomly"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Beyond a certain input level, the output no longer increases linearly.",
+        "b": "Incorrect. The output doesn't go to zero unless the circuit fails.",
+        "c": "Correct! The amplifier clips the signal due to voltage limitations. <a href='https://www.electronics-notes.com/articles/analogue_circuits/amplifiers/clipping.php'>Read more</a>",
+        "d": "Incorrect. Oscillations occur due to instability, not saturation."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which parameter directly affects the gain in a non-inverting operational amplifier?",
+      "answers": {
+        "a": "Capacitance in the input path",
+        "b": "Power supply voltage",
+        "c": "Feedback and input resistor values",
+        "d": "Input frequency only"
+      },
+      "explanations": {
+        "a": "Incorrect. Capacitance affects frequency response, not gain directly.",
+        "b": "Partially correct, but gain is primarily set by resistor values.",
+        "c": "Correct! Gain = 1 + (Rf / Rin) in non-inverting configuration. <a href='https://www.electronics-tutorials.ws/opamp/opamp_3.html'>Reference</a>",
+        "d": "Incorrect. Frequency affects bandwidth, not gain directly."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does a Bode plot generated in Simulink show for an amplifier circuit?",
+      "answers": {
+        "a": "Current vs voltage characteristics",
+        "b": "Time delay between input and output",
+        "c": "Gain and phase vs frequency",
+        "d": "Thermal response of the circuit"
+      },
+      "explanations": {
+        "a": "Incorrect. Bode plots are frequency-domain tools.",
+        "b": "Incorrect. Time delay is not directly shown.",
+        "c": "Correct! Bode plots illustrate how gain and phase change with frequency. <a href='https://www.mathworks.com/help/simulink/slref/bode.html'>More here</a>",
+        "d": "Incorrect. Thermal performance isn't shown in Bode plots."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which Simulink block is commonly used to define time-varying input signals?",
+      "answers": {
+        "a": "Scope",
+        "b": "Gain",
+        "c": "Sine Wave",
+        "d": "Mux"
+      },
+      "explanations": {
+        "a": "Incorrect. Scope is for visualization.",
+        "b": "Incorrect. Gain scales input, not generates it.",
+        "c": "Correct! The Sine Wave block is used to input varying signals. <a href='https://www.mathworks.com/help/simulink/slref/sinewave.html'>View Docs</a>",
+        "d": "Incorrect. Mux combines signals, not generates them."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a linear amplifier simulation, increasing input frequency beyond bandwidth results in:",
+      "answers": {
+        "a": "Higher gain",
+        "b": "Increased linearity",
+        "c": "Attenuated output",
+        "d": "No change in output"
+      },
+      "explanations": {
+        "a": "Incorrect. Gain decreases as frequency exceeds bandwidth.",
+        "b": "Incorrect. Linearity may not improve at high frequencies.",
+        "c": "Correct! The amplifier can't handle frequencies beyond its bandwidth, so the output attenuates. <a href='https://www.analog.com/en/analog-dialogue/articles/understanding-amplifier-bandwidth.html'>See explanation</a>",
+        "d": "Incorrect. Output typically changes with frequency."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     }
   ]
 }
