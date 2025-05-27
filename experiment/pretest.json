@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What does the term 'linearity' refer to in amplifier circuits?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Output increases proportionally with input",
+        "b": "The circuit consumes constant power",
+        "c": "The amplifier does not amplify the input",
+        "d": "Input and output signals are always equal"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct! Linearity means the output is directly proportional to the input signal. <a href='https://www.electronics-tutorials.ws/amplifier/amp_4.html'>Learn more</a>",
+        "b": "Incorrect. Power consumption does not define linearity.",
+        "c": "Incorrect. Amplification still occurs in both linear and non-linear regions.",
+        "d": "Incorrect. Output is amplified, not identical."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which condition can cause an amplifier to operate in the non-linear region?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Input signal is very small",
+        "b": "Temperature is stable",
+        "c": "Input exceeds the supply voltage limits",
+        "d": "Using low frequency signals"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Small signals usually stay within the linear region.",
+        "b": "Incorrect. Temperature doesn't directly shift linearity in this context.",
+        "c": "Correct! Large signals can drive the output into clipping. <a href='https://www.electronics-notes.com/articles/analogue_circuits/amplifiers/distortion-nonlinearity.php'>More here</a>",
+        "d": "Incorrect. Frequency affects bandwidth, not linearity threshold."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In Simulink, what is the main use of a 'Scope' block?",
+      "answers": {
+        "a": "To amplify signals",
+        "b": "To store simulation data",
+        "c": "To visualize signal waveforms",
+        "d": "To convert analog to digital"
+      },
+      "explanations": {
+        "a": "Incorrect. Scope does not alter signals.",
+        "b": "Incorrect. It displays but does not store data by default.",
+        "c": "Correct! The Scope shows time-domain signals during simulation. <a href='https://in.mathworks.com/help/simulink/slref/scope.html'>Learn more</a>",
+        "d": "Incorrect. That function is for ADC blocks."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What indicates that an amplifier has entered the non-linear region?",
+      "answers": {
+        "a": "Output signal follows input exactly",
+        "b": "Clipping or distortion appears in the output",
+        "c": "Gain becomes negative",
+        "d": "The circuit stops drawing power"
+      },
+      "explanations": {
+        "a": "Incorrect. That represents a linear system.",
+        "b": "Correct! Clipping is a hallmark of non-linear behavior. <a href='https://www.electronics-tutorials.ws/amplifier/amp_7.html'>Read more</a>",
+        "c": "Incorrect. Gain dropping is different from entering non-linearity.",
+        "d": "Incorrect. Power draw doesn't indicate linearity."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is feedback used in amplifier circuits?",
+      "answers": {
+        "a": "To reduce power consumption",
+        "b": "To enhance linearity and control gain",
+        "c": "To increase distortion",
+        "d": "To convert analog signals to digital"
+      },
+      "explanations": {
+        "a": "Incorrect. Feedback is not mainly for reducing power.",
+        "b": "Correct! Feedback stabilizes gain and improves linearity. <a href='https://www.ti.com/lit/an/sloa062/sloa062.pdf'>Learn more</a>",
+        "c": "Incorrect. Feedback usually reduces distortion.",
+        "d": "Incorrect. Feedback doesn’t convert signal types."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
