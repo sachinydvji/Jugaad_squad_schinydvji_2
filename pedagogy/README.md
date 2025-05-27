@@ -30,10 +30,8 @@ This experiment focuses on visualizing and understanding the transition between 
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
  1.|Identify the transition from linear to non-linear operation in amplifier circuits.| Understanding | Identify
-
- 2.|Construct and simulate custom amplifier circuits using Simulink.| Applying | Construct
-
- 3.|Analyze waveform outputs and frequency responses of simulated circuits .| Analyzing | Analyze
+ 2.|Construct and simulate custom amplifier circuits using Simulink   | Applying | Construct
+ 2.|Analyze waveform outputs and frequency responses of simulated circuits  |Analyzing  | Analyze
 
 <br/>
 <div align="right">
@@ -66,12 +64,9 @@ Assessment Method: Embedded quiz questions, waveform analysis tasks, and scenari
 
 Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the simulator | Assessment Questions as per LO & Task
 :--|:--|:--|:-:
-1.| Identify linear/non-linear behavior | Gradually increase input amplitude and observe output waveform | At what point does the amplifier output begin to clip?
-
-2.| Construct amplifier circuits | Build a common-emitter amplifier using Simulink blocks | What happens to gain when emitter resistance is increased.?
-
-3.| Analyze waveform and frequency response | Perform transient and frequency response analysis | How does feedback resistor value influence bandwidth?
-
+1.|Identify linear/non-linear behavior |	Gradually increase input amplitude and observe output waveform	|At what point does the amplifier output begin to clip?
+2.|Construct amplifier circuits |	Build a common-emitter amplifier using Simulink blocks |	What happens to gain when emitter resistance is increased?
+3.|Analyze waveform and frequency response |	Perform transient and frequency response analysis|	How does feedback resistor value influence bandwidth?
 <div align="right">
     <b><a href="#top">↥ back to top</a></b>
 </div>
@@ -85,12 +80,8 @@ Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the s
 
 Sr.No | What Students will do? |	What Simulator will do?	| Purpose of the task
 :--|:--|:--|:--:
-1 .| Select amplifier type and build circuit using Simulink blocks | Display interactive circuit with configurable parameters | Familiarize with amplifier configuration
-
-2 .| Change input signal amplitude | Display real-time waveform of output | Visualize impact on output and detect non-linearity
-
-3 .| Adjust circuit parameters (resistors, feedback loop) | Simulate updated waveform and performance | Understand parameter effect on gain and linearity
-
-4 .| Run Bode plot analysis | Display frequency response | Assess gain variation across frequency range
-
-5 .| Trigger fault conditions (e.g., excessive input) | Display clipped or distorted output | Emphasize importance of design limits and signal constraints
+1.|Select amplifier type and build circuit using Simulink blocks|	Display interactive circuit with configurable parameters	|Familiarize with amplifier configuration
+2.|Change input signal amplitude|	Display real-time waveform of output||	Visualize impact on output and detect non-linearity
+3.|Adjust circuit parameters (resistors, feedback loop)|	Simulate updated waveform and performance	|Understand parameter effect on gain and linearity
+4.|Run Bode plot analysis|	Display frequency response	|Assess gain variation across frequency range
+5.|Trigger fault conditions (e.g., excessive input)|	Display clipped or distorted output	|Emphasize importance of design limits and signal constraints
